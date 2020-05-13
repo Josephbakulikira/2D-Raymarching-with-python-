@@ -26,7 +26,6 @@ class Ray:
                     closest = object
 
             if record < 1:
-                self.collisions.append(current_position)
                 break
 
             self.x_position = current_position[0] + cos(self.angle) * record
@@ -39,7 +38,7 @@ class Ray:
             current_position[0] = normalize(self.x_position) * a_X
             current_position[1] = normalize(self.x_position) * a_Y
             pygame.draw.circle(self.screen, self.color, (int(self.x_position), int( self.y_position)), 5)
-
+            closest.display(self.screen, (130, 190, 41))
 
             if offScreen([self.x_position, self.y_position], 1920, 1080):
                 break
