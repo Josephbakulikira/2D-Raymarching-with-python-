@@ -1,3 +1,7 @@
+"""
+check out my youtube channel
+link: https://www.youtube.com/channel/UCjPk9YDheKst1FlAf_KSpyA
+"""
 import pygame
 import os
 from Boundary import Boundary
